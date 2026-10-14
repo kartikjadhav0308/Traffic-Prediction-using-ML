@@ -1,0 +1,43 @@
+{
+  "dataset_source": "Kaggle Traffic Prediction Dataset (traffic.csv)",
+  "total_samples": 48120,
+  "features": [
+    "Junction",
+    "hour",
+    "day_of_week",
+    "day",
+    "month",
+    "year",
+    "is_weekend"
+  ],
+  "random_forest": {
+    "r2": 0.9645,
+    "mae": 2.49,
+    "rmse": 3.81,
+    "train_time_sec": 0.62,
+    "feature_importance": {
+      "Junction": 0.5242,
+      "year": 0.1698,
+      "hour": 0.1399,
+      "month": 0.0669,
+      "day_of_week": 0.0398,
+      "is_weekend": 0.0316,
+      "day": 0.0278
+    }
+  },
+  "xgboost": {
+    "r2": 0.9534,
+    "mae": 2.62,
+    "rmse": 4.36,
+    "train_time_sec": 0.58,
+    "feature_importance": {
+      "Junction": 0.4551,
+      "year": 0.3648,
+      "hour": 0.0818,
+      "day_of_week": 0.0506,
+      "month": 0.0408,
+      "day": 0.0069,
+      "is_weekend": 0.0
+    }
+  }
+}
